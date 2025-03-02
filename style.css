@@ -110,3 +110,21 @@ a {
 .logo {
     width: 30%;
 }
+
+.form-row input:focus {
+    outline: none;
+    border: 1px solid rgb(103, 103, 255);
+    padding: 2px;
+}
+
+.form-row input[type='email']:focus:invalid,
+.form-row input[type='tel']:focus:invalid,
+.form-row input[type='password']:focus:invalid {
+    border: 1px solid #D55C5F;
+    box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+.form-row input[type='password']:focus:valid {
+    border: 1px solid green;
+    box-shadow: none;
+}

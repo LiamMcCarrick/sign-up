@@ -1,18 +1,72 @@
 body {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     display: flex;
-}
-
-.txt-container {
-    flex: 2 1 0;
-}
-
-.bg-img {
-    flex: 1 1 0;
+    background-color: #f9fafb;
 }
 
 .bg {
     height: 100vh;
 }
+
+.section-container {
+    display: flex;
+}
+
+#section {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 2px -2px lightgray;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.col {
+    margin-right: 40px;
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+.service-info {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+#section, .service-info, .btn-container {
+    padding-left: 40px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #68b0b6;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: #68b0b6;
+  }
+
+  .logo-container {
+    position: absolute;
+  }

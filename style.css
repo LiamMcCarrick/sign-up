@@ -7,10 +7,6 @@ body {
     background-color: #f9fafb;
 }
 
-.bg {
-    height: 100vh;
-}
-
 .section-container {
     display: flex;
 }
@@ -60,13 +56,37 @@ button {
   
     padding: 10px 40px;
     cursor: pointer;
-  }
+}
 
-  a {
+a {
     text-decoration: none;
     color: #68b0b6;
-  }
+}
 
-  .logo-container {
+.bg-img {
+    position: relative;
+}
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo-container {
     position: absolute;
-  }
+    width: 100%;
+    background: rgba(3, 3, 3, 0.5);
+    top: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container h1 {
+    align-content: center;
+    color: white;
+}
+
+.logo {
+    width: 30%;
+}
